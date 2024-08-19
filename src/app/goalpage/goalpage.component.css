@@ -1,0 +1,174 @@
+.table_div {
+    margin-top: 5%;
+}
+.goal_sections {
+    border-top: solid 2px white;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+.goal_elem{
+    flex: 1;
+    color: white	;
+}
+.goal_div{
+    margin: 1% 0;
+    background-color:#4B61D1;
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.left-side{
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 2%;
+    margin-top: 0.5%;
+}
+.right-side{
+    text-align: right;
+    margin-right: 3%;
+    margin-top: 1.25%;
+    display: flex;
+}
+button{
+    font-size: 1rem;
+}
+.right-side button {
+    font-size: 1rem;
+    padding: 2%;
+    margin: 0 2%;
+    border: solid 1px;
+}
+.goal_buttons {
+    display: inline;
+}
+#input_check{
+    margin-top: 8%;
+}
+#input_check input {
+    width: 5px;
+    height: 5px;
+}
+h3 {
+    font-size: 2.3rem;
+}
+h1 {
+    font-size: 3.5rem;
+}
+h4 {
+    font-size:1.4rem;
+}
+
+.hide {
+    display: none;
+}
+button {
+    padding: 1%;
+    margin: 0 1%;
+}
+.goal_buttons {
+    flex:7;
+}
+.checkbox_container {
+    flex: 1;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.checkboxes {
+    transform: scale(1.6);
+}
+#phone_noti {
+    margin: 10%;
+    background-color: red;
+    padding: 5%;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+#points_score {
+    margin: 0;
+    padding: 20%;
+}
+#Points_displayer{
+    text-align: center;
+    width: auto;
+    margin: 5% 35%;
+    /* border:solid; */
+    border-radius:10px;
+    /* background-color:#000536; */
+    display: flex;
+}
+#Points_displayer div{
+    flex: 1;
+    background-color: #161b3b;
+    margin: 3%;
+    border-radius: 20%;
+}
+@media only screen and (max-width:600px) {
+    #Points_displayer {
+        width: auto;
+        margin: 20% 5%;
+    }
+    #Points_displayer p {
+        font-size: 1.5rem;
+    }
+
+    .goal_div {
+        width: 99%;
+        margin-left: 0;
+    }  
+    .right-side {
+        flex: 1.5;
+    }  
+    .checkbox_container{
+        margin: 17% 0;
+    }
+    .checkbox_container input {
+        transform: scale(2.3);
+    }
+    .goal_buttons {
+       text-align: center;
+       margin-right: 8%;
+    }
+    .goal_buttons button {
+        margin: 4% 0;
+        font-size: 1rem;
+        padding: 5%;
+    }
+    .left-side {
+        margin: 6% auto;
+        font-size: 1.6rem;
+    }
+    button {
+        font-size: 1.5rem;
+        padding: 3%;
+    }
+    .table_div {
+        margin: 20% 0;
+    }
+    .goal_div {
+        margin: 5% 0;
+    }
+    h3 {
+        font-size: 2.8rem;
+    }
+    h1{
+        font-size: 3.5rem;
+        margin: 25% 0;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    h5 {
+        font-size: 1.1rem;
+    }
+    .left-side {
+        flex: 2;
+    }
+    .right-side button {
+        display: inline-block;
+    }
+
+}

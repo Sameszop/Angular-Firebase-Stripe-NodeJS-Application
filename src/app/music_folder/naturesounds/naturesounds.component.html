@@ -1,0 +1,18 @@
+<main [ngClass]="{'player':player_status}">
+    <h1 >Nature Sounds</h1>
+    <h3 >Skip to get a different nature sound, it loops</h3>
+    <div id="nature_container" >
+        <div id="player_container">
+            <div>
+                <img [src]="current_img" alt=""> 
+                <p id="title">{{current_title}}</p>
+            </div>
+            <div class="buttons_div" >
+                <button class="button_music" (click)="backward()"><i class="fa-solid fa-backward-step fa-2x  "></i></button>
+                <button id="play_button" class="button_music" (click)="start_player()"><i [class]="play_button"></i></button>
+                <button class="button_music" (click)="forward()"><i class="fa-solid fa-forward-step fa-2x"></i></button>
+            </div>
+        </div>
+    </div>
+    <audio style="display: none;" #music_player (ended)="loop()"></audio>
+</main>

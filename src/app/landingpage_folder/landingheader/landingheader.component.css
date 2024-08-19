@@ -1,0 +1,140 @@
+header div {
+    flex:1;
+}
+header div p {
+    display: inline;
+    font-size: 1.1rem;
+}
+#links_sec {
+    margin-right: 3%;
+    text-align: right;
+}
+img{
+    max-height: 50px;
+}
+#name {
+    margin-top: 2%;
+}
+.links_elem {
+    margin: 0 2%;
+}
+.fa-circle-xmark {
+    color:#FF6666;
+}
+.fa-circle-check {
+    color: rgb(28, 188, 255);
+}
+header{
+    width:100%;
+    background-color: #000536;
+    height: min-content;
+    display: flex;
+    border-bottom: solid 1px;
+    max-height: 60px;
+}
+.header_elem{
+    flex: 1;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 4%;
+    height: min-content;
+}
+.header_elem p {
+    margin: 0;
+    cursor: pointer;
+}
+.header_flex {
+    display:flex;
+    height: min-content;
+}
+header div p {
+    cursor: pointer;
+}
+#links_sec {
+    padding: 1.5% 0;
+}
+#logo_sec {
+    display: flex;
+}
+#logo_sec div {
+    flex: 0.4;
+}
+#logoDiv{
+    text-align: right;
+}
+#nameDiv {
+    text-align: left;
+}
+@media only screen and (max-width:600px) {
+    #header_div {
+        display: block;
+        background-color: #000536;
+        right: 0;
+        margin-right: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transform: translateX(100%); /* Initially position the menu outside the viewport */
+        transition: transform 0.3s ease-in-out;
+        position: fixed; /* Make the sidebar fixed */
+        top: 0;
+        width: 70%;
+        border: solid;
+        border-right: none;
+        height: 100%;
+        text-align: right;
+        z-index: 1000; /* Ensure the sidebar is above other content */
+    }
+    main{
+        max-width: 100%;
+    }
+    body{
+        max-width: 100%;
+    }
+    #header_div.open {
+        transform: translateX(0); /* Move the sidebar into the viewport */
+    }
+    #header_div p {
+        margin-right: 5%;
+    }
+    #header_div a {
+        color: white;
+        text-decoration: none;
+        font-size: 2.5rem;
+        margin: 3% 0;
+    }
+    .links {
+        border-top: solid white;
+        /* margin-top: 20%; */
+    }
+    #menu_div_open {
+        text-align: right;
+        margin: 8%;
+    }
+    header{
+        text-align: right;
+        height: 80px;
+        width: 100%;
+    }
+    #menu_div_closed {
+        padding: 5%;
+        width: 100%;
+    }
+    .SM_links {
+        display: flex;
+        margin: 5%;
+        text-align: center;
+    }
+    .SM_links div {
+        flex:1;
+    }
+    #second_half {
+        border-top: solid white;
+        margin-top: 20%;
+    }
+    #links_phone {
+        margin-top: 20%;
+    }
+    #menu_div_closed {
+        padding:3%;
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/membership/membership.component.css"],
+  "sourcesContent": [".mem_container {\r\n    margin: 5% 30%;\r\n    background-color: #000536;\r\n    border-radius: 10%;\r\n    padding: 5%;\r\n}\r\n.price_container h2 {\r\n    font-size: 2.5rem;\r\n    margin-bottom: 1%;\r\n}\r\n.price_container {\r\n    margin-bottom: 20%;\r\n}\r\n.benefits_container p{\r\n    font-size: 1.3rem;\r\n}\r\n.benefits_container {\r\n    text-align: left;\r\n    /* border-top: solid 1px; */\r\n    margin: 15% 5%;\r\n}\r\n.getmem_container button {\r\n    font-size: 1.5rem;\r\n    padding: 2%;\r\n} \r\n.getmem_container {\r\n    margin:10% 5%;\r\n}\r\n#checkbox {\r\n    transform: scale(1.6);\r\n}\r\nlabel {\r\n    font-size: 1.3rem;\r\n}\r\n.agree_container {\r\n    margin: 5% 0;\r\n}\r\nh1 {\r\n    font-size: 3.5rem;\r\n    margin: 10%;\r\n}\r\n@media only screen and (max-width:600px) {\r\n    .mem_container {\r\n        margin: 5% 0;\r\n    }\r\n    main {\r\n        min-height: auto;\r\n    }\r\n}"],
+  "mappings": ";AAAA,CAAC;AACG,UAAQ,GAAG;AACX,oBAAkB;AAClB,iBAAe;AACf,WAAS;AACb;AACA,CAAC,gBAAgB;AACb,aAAW;AACX,iBAAe;AACnB;AACA,CAJC;AAKG,iBAAe;AACnB;AACA,CAAC,mBAAmB;AAChB,aAAW;AACf;AACA,CAHC;AAIG,cAAY;AAEZ,UAAQ,IAAI;AAChB;AACA,CAAC,iBAAiB;AACd,aAAW;AACX,WAAS;AACb;AACA,CAJC;AAKG,UAAO,IAAI;AACf;AACA,CAAC;AACG,aAAW,MAAM;AACrB;AACA;AACI,aAAW;AACf;AACA,CAAC;AACG,UAAQ,GAAG;AACf;AACA;AACI,aAAW;AACX,UAAQ;AACZ;AACA,OAAO,KAAK,OAAO,IAAI,CAAC,SAAS,CAAC;AAC9B,GA1CH;AA2CO,YAAQ,GAAG;AACf;AACA;AACI,gBAAY;AAChB;AACJ;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/authentication/email-verify/email-verify.component.css"],
+  "sourcesContent": ["#container {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    height: 100vh;\r\n    background-color: #000536;\r\n}\r\n#form{\r\n    width: 50%;\r\n    padding: 4%;\r\n    background-color:#1d244e;\r\n    border-radius: 10px;\r\n    border: 2px solid white;\r\n    color: white;\r\n    max-height: 99vh;\r\n}\r\nbutton {\r\n    font-size: 1rem;\r\n    padding:2%;\r\n}\r\np {\r\n    font-size: 1.2rem;\r\n}\r\n@media only screen and (max-width:600px) {\r\n    #form {\r\n        width: 100%;\r\n    }\r\n}"],
+  "mappings": ";AAAA,CAAC;AACG,WAAS;AACT,eAAa;AACb,mBAAiB;AACjB,UAAQ;AACR,oBAAkB;AACtB;AACA,CAAC;AACG,SAAO;AACP,WAAS;AACT,oBAAiB;AACjB,iBAAe;AACf,UAAQ,IAAI,MAAM;AAClB,SAAO;AACP,cAAY;AAChB;AACA;AACI,aAAW;AACX,WAAQ;AACZ;AACA;AACI,aAAW;AACf;AACA,OAAO,KAAK,OAAO,IAAI,CAAC,SAAS,CAAC;AAC9B,GAjBH;AAkBO,WAAO;AACX;AACJ;",
+  "names": []
+}

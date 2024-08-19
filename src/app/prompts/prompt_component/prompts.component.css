@@ -1,0 +1,35 @@
+#prompt_div {
+    position: fixed;
+    color: black;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid black;
+    padding: 2%;
+    background-color: #E2E8F0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#prompt_div h2 {
+    font-size: 2rem;
+}
+#prompt_div p {
+    font-size: 1.3rem;
+}
+#prompt_div input {
+    font-size: 1.3rem;
+}
+#prompt_div button {
+    font-size: 1rem;
+    padding: 2%;
+    margin: 0 10%;
+}
+#prompt_div div {
+    margin-top: 10%;
+}
+#points_score {
+    padding: 10%;
+    margin: 0;
+}
+input {
+    color: black;
+}

@@ -1,0 +1,28 @@
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000536;
+}
+#form{
+    width: 50%;
+    padding: 4%;
+    background-color:#1d244e;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    max-height: 99vh;
+}
+button {
+    font-size: 1rem;
+    padding:2%;
+}
+p {
+    font-size: 1.2rem;
+}
+@media only screen and (max-width:600px) {
+    #form {
+        width: 100%;
+    }
+}

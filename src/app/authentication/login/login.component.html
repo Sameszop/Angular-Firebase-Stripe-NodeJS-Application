@@ -1,0 +1,20 @@
+<div id="container">
+    <div class="auth_fields">
+        <h1>Login</h1>
+        <form>
+            <div class="forms">
+                <div class="form_comp">
+                    <input required placeholder="Email" type="email" id="email_login" [(ngModel)] = "log_email" [ngModelOptions]="{ standalone: true }"/>
+                </div>
+                <div class="form_comp">
+                    <input required placeholder="Password" type="password" id="password_login" [(ngModel)] = "log_password"  [ngModelOptions]="{ standalone: true }"/>
+                </div>
+            </div>
+            <button type="submit" class="buttons" (click)="login_html()">Submit</button>
+        </form>
+        <div class="change_site">
+            <p>No Account?</p>
+            <p (click)="to_register()" class="link">Create a new Account</p>
+        </div>
+    </div>
+</div>

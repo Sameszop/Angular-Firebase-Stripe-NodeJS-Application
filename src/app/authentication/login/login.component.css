@@ -1,0 +1,61 @@
+.auth_fields{
+    width: 35%;
+    background-color:#1d244e;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
+}
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000536;
+}
+#register_div{
+    margin-top: 1%;
+    margin-top: 4%;
+}
+#register_div .forms{
+    margin-top: 7%;
+    margin-right: 8%;
+}
+#register_div .buttons{
+    margin-top: 5%;
+}
+.form_comp{
+    margin: 5% 5%;
+}
+.buttons{
+    margin-top: 8%;
+    font-size: 1.3rem;
+    padding: 2%;
+}
+h1{
+    font-size: 2.4rem;
+}
+.change_site{
+    margin: 5%;
+    font-size: 1.1rem;
+}
+.link{
+    color: #2200CC;
+}
+.form_comp label {
+    padding-right: 2%;
+}
+input {
+    padding: 4%;
+    border-radius: 10px;
+    border: solid white;
+    font-size: 1.2rem;
+    background-color: #1d244e;
+    color: white;
+    max-width: 90%;
+    -webkit-text-fill-color: white; /* WebKit specific property */
+}
+@media only screen and (max-width:600px) {
+    .auth_fields {
+        width: 100%;
+    }
+}

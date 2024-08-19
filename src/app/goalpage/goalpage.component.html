@@ -1,0 +1,116 @@
+<app-header [background_stat]="prompt_status" />
+<main [ngClass]="{'background':prompt_status}">
+    <div id="points_place" [ngClass]="{'background':prompt_status}">
+        <div id="Points_displayer">
+            <div>
+                <p >Success Days:</p>
+                <p >{{count}}</p>
+            </div>
+            <div>
+                <p>Points:</p>
+                <p>{{Points}}</p>
+            </div>
+        </div>
+    </div>    
+    <h1>Goalpage</h1>
+    @if(!isWindowOver600px) {
+        <div id="phone_noti">
+            <p>When You Accomplished The Goal, DOUBLECLICK!</p>
+        </div>
+    }
+    <div class="goal_sections" id="MIG_container">
+        <h3>Most Important Goals (max. 3)</h3>
+        <h4>What do you have to accomplish today at any cost?</h4>
+        <button (click)=" add_Goal('MIG')">Add Goal</button>
+        @if(isWindowOver600px){
+            <button (click)=" getPoints('MIG', 120) ">Get Points</button>
+        }
+        <div class="table_div">
+            <div id="MIG_table">
+                @if(MIGs != null){
+                    @for(MIG of MIGs; track $index) {
+                        <div [id]="'div_MIG'+$index" class="goal_div" (click)="getPointsPhone('MIG', 120, $index, MIG[0])">
+                            <p [id]="'p_MIG_'+$index" class="goal_elem left-side">{{MIG[1]}}</p>
+                            <div class="goal_elem right-side">
+                                <div class="goal_buttons">
+                                    <button (click)="rename('p_'+$index,MIG[0],'MIG')">Change Name</button>
+                                    <button (click)="remove($index, MIG[0],'MIG')">Delete</button>
+                                </div>
+                                @if(isWindowOver600px) {
+                                    <div class="checkbox_container">
+                                        <input type="checkbox" [id]="'MIG_'+$index" class="MIG_checkbox checkboxes">
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <div id="IG_parentdiv" class="goal_sections">
+        <h3>Goals (max. 8)</h3>
+        <h4>What is important to do today?</h4>
+        <button (click)="add_Goal('Goals')">Add Goal</button>
+        @if(isWindowOver600px){
+            <button (click)="getPoints('Goals', 75)">Get Points</button>
+        }
+        <div class="table_div">
+            <div id="IG_table">
+                @if(Goals != null){    
+                    @for(Goal of Goals; track $index){
+                        <div [id]="'div_Goals'+$index" class="goal_div" (click)="getPointsPhone('Goals', 75, $index, Goal[0])">
+                            <p [id]="'p_IG_'+$index" class="goal_elem left-side">{{Goal[1]}}</p>
+                            <div class="goal_elem right-side">
+                                <div class="goal_buttons">
+                                    <button (click)="rename('p_'+$index, Goal[0],'Goals')">Change Name</button>
+                                    <button (click)="remove($index,Goal[0],'Goals')">Delete</button>
+                                </div>
+                                @if(isWindowOver600px){
+                                    <div class="checkbox_container">
+                                        <input type="checkbox" [id]="'Goals_'+$index" class="Goals_checkbox checkboxes">
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <div id="habit_container" class="goal_sections">
+        <h3>Habits</h3>
+        <h4>What do you want to do everyday?</h4>
+        <h5>The habit will be displayed tomorrow again!</h5>
+        <button (click)="add_Goal('Habits')">Add Goal</button>
+        @if(isWindowOver600px){
+            <button (click)="getPoints('Habits', 50)">Get Points</button>
+        } 
+        <div class="table_div">
+            <div id="IG_table">
+                @if(Habits != null){    
+                    @for(Habit of Habits; track $index){
+                        @if(Habit[1].Date !== today){
+                            <div [id]="'div_Habits'+$index"  class="goal_div" (click)="getPointsPhone('Habits', 50, $index, Habit[0])">
+                                <p [id]="'p_HAB_'+$index" class="goal_elem left-side">{{Habit[1].Name}}</p>
+                                <div class="goal_elem right-side">
+                                    <div class="goal_buttons">
+                                        <button (click)="rename('p_HAB_'+$index, Habit[0], 'Habits', $index)">Change Name</button>
+                                        <button (click)="remove($index, Habit[0], 'Habits')">Delete</button>
+                                    </div>
+                                    @if(isWindowOver600px){
+                                        <div class="checkbox_container">    
+                                            <input type="checkbox" [id]="'Habits_'+$index" class="Habits_checkbox checkboxes">
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</main>
+<app-footer [background_stat]="prompt_status" />
+<app-prompts />

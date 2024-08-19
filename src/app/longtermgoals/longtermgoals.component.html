@@ -1,0 +1,76 @@
+<app-header [background_stat]="prompt_status" />
+<main [ngClass]="{'background':prompt_status}">
+    <div id="points_place" [ngClass]="{'background':prompt_status}">
+        <div id="Points_displayer">
+            <div>
+                <p >Success Days:</p>
+                <p >{{count}}</p>
+            </div>
+            <div>
+                <p>Points:</p>
+                <p>{{Points}}</p>
+            </div>
+        </div>
+    </div>        
+    <div>
+        <h1>Long Term Goals</h1>
+        <h2>What do you want to accomplish in the future?</h2>
+        @if(!isWindowOver600px) {
+            <div id="phone_noti">
+                <p>When You Accomplished The Goal, DOUBLECLICK!</p>
+            </div>
+        }
+        <div>
+            <button (click)="add_LTG()" id="add_LTG">Add Long Term Goal</button>
+        </div>
+        <div>
+            @for(LTG of LTGs; track j; let j = $index) {
+                <div [id] = "'div_'+LTG[0]" class="LTG_container">
+                    <div>
+                        <img [src]="LTG[1].img" alt="" [id]="'img_'+LTG[0]" (click)="change_pic(LTG[0])">
+                        <h2 class="goal_name" (click)="change_Name(LTG[0],j,'LTG')">{{LTG[1].Name}}</h2>
+                    </div>
+                    <div class="LTG_menu">
+                        <button (click)="add_Steps(LTG[0], j)">Add Steps</button>
+                        <button (click)="remove(LTG[0])">Delete Goal</button>
+                        <button (click)="change_pic(LTG[0])">Change Picture</button>
+                        @if(isWindowOver600px){
+                            <button (click)="get_Points(LTG[0], j)">Get Points</button>
+                        }
+                    </div>
+                    @if(isStepsArrayAndNotEmpty(LTG[1].steps)){
+                        <div>
+                            <div class="step_visual">
+                                <div class="step_visual_elem"></div>
+                                <h2 class="step_visual_elem stepsHeader">Steps:</h2>
+                                <div class="step_visual_elem">
+                                    <i class="fa-solid fa-2x fa-caret-down" [id]="'icon_' + LTG[0]" (click)="change_vision(LTG[0], j)"></i>
+                                </div> 
+                            </div>
+                            <div [id]="'step_container_'+LTG[0]" >
+                                @for(step of LTG[1].steps; track i; let i = $index) {
+                                    <div [id]="'div_'+ step[0]" class="step_container" (click)="getPointsPhone( LTG[0],step[0], j, i )">
+                                        <p class="step_elem left_side" [id]="'p_'+ step[0]"><span class="marker">{{ i + 1 +"."}}</span>  {{step[1]}}</p>
+                                        <div class="step_elem button_area">
+                                            <div class="step_buttons">
+                                                <div class="button_elem"><button (click)="change_Name(step[0], i,'steps',LTG[0])">change Name</button></div>
+                                                <div class="button_elem"><button (click)="remove(step[0], LTG[0],j,i)">delete</button></div>
+                                            </div>
+                                            @if(isWindowOver600px) {
+                                                <div class="step_check">
+                                                    <input type="checkbox" name="" id="" [class]="LTG[0] + '_checkbox'">
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>      
+            }
+        </div>
+    </div>
+</main>
+<app-footer [background_stat]="prompt_status" />
+<app-prompts />

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/prompts/prompt_component/prompts.component.css"],
+  "sourcesContent": ["#prompt_div {\r\n    position: fixed;\r\n    color: black;\r\n    top: 50%; \r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n    border: 4px solid black;\r\n    padding: 2%;\r\n    background-color: #E2E8F0;\r\n    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);\r\n}\r\n#prompt_div h2 {\r\n    font-size: 2rem;\r\n}\r\n#prompt_div p {\r\n    font-size: 1.3rem;\r\n}\r\n#prompt_div input {\r\n    font-size: 1.3rem;\r\n}\r\n#prompt_div button {\r\n    font-size: 1rem;\r\n    padding: 2%;\r\n    margin: 0 10%;\r\n}\r\n#prompt_div div {\r\n    margin-top: 10%;\r\n}\r\n#points_score {\r\n    padding: 10%;\r\n    margin: 0;\r\n}\r\ninput {\r\n    color: black;\r\n}"],
+  "mappings": ";AAAA,CAAC;AACG,YAAU;AACV,SAAO;AACP,OAAK;AACL,QAAM;AACN,aAAW,UAAU,IAAI,EAAE;AAC3B,UAAQ,IAAI,MAAM;AAClB,WAAS;AACT,oBAAkB;AAClB,cAAY,EAAE,EAAE,IAAI,KAAK,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE;AACtC;AACA,CAXC,WAWW;AACR,aAAW;AACf;AACA,CAdC,WAcW;AACR,aAAW;AACf;AACA,CAjBC,WAiBW;AACR,aAAW;AACf;AACA,CApBC,WAoBW;AACR,aAAW;AACX,WAAS;AACT,UAAQ,EAAE;AACd;AACA,CAzBC,WAyBW;AACR,cAAY;AAChB;AACA,CAAC;AACG,WAAS;AACT,UAAQ;AACZ;AACA;AACI,SAAO;AACX;",
+  "names": []
+}

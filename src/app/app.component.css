@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#membership_ad {
+    background-color: #999900;
+}
+#membership_ad button {
+    font-size: 1rem;
+    padding: 1%;
+    margin:0 2%;
+    margin-bottom: 3%;
+}
+#membership_button_div {
+    display: flex;
+    width: 30%;
+    margin-left: 35%;
+}
+#membership_button_div div{
+    flex: 1;
+}
+div i {
+    margin-top: 3%;
+}

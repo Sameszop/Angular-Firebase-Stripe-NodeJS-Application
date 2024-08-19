@@ -1,0 +1,44 @@
+img {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    object-position: center;
+    border: 2px solid;
+}
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 4%;
+}
+.button_music {
+    border-radius: 50%;
+    background-color: #002244;
+    padding: 18px 22.5px;
+}
+i {
+    color: white;
+}
+.buttons_div {
+    margin: 3%;
+}
+main {
+    min-height: min-content;
+    padding: 0;
+    margin: 0;
+}
+#song_title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5%;
+    padding: 0.5%;
+}
+#song_artist {
+    font-size: 1rem;
+}
+/* Player */
+.player img {
+    width: 200px;
+    height: 200px;
+}
+.player h1{
+    font-size: 2.5rem;
+}

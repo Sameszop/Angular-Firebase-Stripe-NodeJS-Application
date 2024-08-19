@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/footer/footer.component.css"],
+  "sourcesContent": ["#footer {\r\n    display: flex;\r\n    background-color: #000536;\r\n    border-top: white solid;\r\n}\r\n\r\n.footer_container {\r\n    flex: 1;\r\n}\r\n#links p {\r\n    text-decoration: underline;\r\n}\r\n#send_email {\r\n    font-size: 1.3rem;\r\n    padding: 2%;\r\n}\r\n.sm_container {\r\n    display: flex;\r\n    margin:  3% 0;\r\n    width: 40%;\r\n    margin-left: 30%;\r\n}\r\n.sm_container i {\r\n    flex: 1;\r\n    margin: 1%;\r\n}\r\n.sm_container p {\r\n    flex: 3;\r\n    text-align: left;\r\n    margin: 1%;\r\n    margin-top: 4%;\r\n}"],
+  "mappings": ";AAAA,CAAC;AACG,WAAS;AACT,oBAAkB;AAClB,cAAY,MAAM;AACtB;AAEA,CAAC;AACG,QAAM;AACV;AACA,CAAC,MAAM;AACH,mBAAiB;AACrB;AACA,CAAC;AACG,aAAW;AACX,WAAS;AACb;AACA,CAAC;AACG,WAAS;AACT,UAAS,GAAG;AACZ,SAAO;AACP,eAAa;AACjB;AACA,CANC,aAMa;AACV,QAAM;AACN,UAAQ;AACZ;AACA,CAVC,aAUa;AACV,QAAM;AACN,cAAY;AACZ,UAAQ;AACR,cAAY;AAChB;",
+  "names": []
+}

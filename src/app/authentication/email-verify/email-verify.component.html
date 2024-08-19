@@ -1,0 +1,11 @@
+<div id="container">
+    <div id="form">
+        <h3>Just A Second...</h3>
+        <div><i class="fa-regular fa-envelope fa-2x"></i></div>
+        <h2>Please verify Your E-Mail</h2>
+        <p>You´re almost there, we send an email to {{user?.email || "your email adress"}} </p>
+        <p>Click on the link in the email and your account is ready, if you do not see it look in the <b>spam folder</b> </p>
+        <button (click)="sendEmail()">send again</button>
+        <h1><i class="fa-solid fa-rotate-right"></i> Reload the Site when you verified</h1>
+    </div>
+</div>

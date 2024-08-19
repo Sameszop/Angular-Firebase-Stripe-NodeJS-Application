@@ -1,0 +1,38 @@
+<div id="container">
+    <div class="auth_fields" id="register_div">
+        <h1>Register</h1>
+        <form (submit)="register_html()">
+            <div class="forms">
+                <div class="form_comp">
+                    <input required placeholder="profile-name" type="text" id="name_reg" [(ngModel)]="reg_name" [ngModelOptions]="{ standalone: true }">
+                </div>
+                <div class="form_comp">
+                    <input required placeholder="Email" type="email" id="email_reg" [(ngModel)]="reg_email" [ngModelOptions]="{ standalone: true }">
+                </div>
+                <div class="form_comp">
+                    <input required placeholder="Password" type="password" id="password_reg" [(ngModel)]="reg_password" [ngModelOptions]="{ standalone: true }">
+                    <div class="conditions"><p [ngStyle]="{'color': reg_password  && reg_password.length >= 7 ? 'green' : 'red'}">min. 7 characters</p>, <p [ngStyle]="{'color': reg_password  && hasNumber.test(reg_password) ? 'green' : 'red'}">number</p>, <p [ngStyle]="{'color': reg_password  && hasLetters.test(reg_password) ? 'green' : 'red'}">min. 5 letters</p></div>
+                </div>
+                <div class="form_comp">
+                    <input required placeholder="Repeat Password" type="password" id="password_reg2" [(ngModel)]="reg_password2" [ngModelOptions]="{ standalone: true }">
+                </div>
+                <div id="approval_container">
+                    <p > I agree to the 
+                        <a class="link" (click)="openInNewTab('/privacy-policy')">Privacy policy</a> 
+                        and 
+                        <a class="link" (click)="openInNewTab('/terms-of-usage')">Terms and Conditions</a>  
+                        of this Application
+                    </p>
+                    <div>
+                        <input type="checkbox" required>
+                    </div>
+                </div>               
+            </div>
+            <button class="buttons" type="submit">Submit</button>
+        </form>
+        <div class="change_site">
+            <p>Already having an account?</p>
+            <p (click)="to_login()" class="link">Login</p>
+        </div>
+    </div>
+</div>

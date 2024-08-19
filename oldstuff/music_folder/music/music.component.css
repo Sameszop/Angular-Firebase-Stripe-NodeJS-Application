@@ -1,0 +1,24 @@
+.header_div {
+    display: flex;
+    background-color: #0066b2;
+}
+.header_div p {
+    flex:1;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+button{
+    color: white;
+    background-color: #0066b2;
+    border: solid;
+    font-size: 1.2rem;
+}
+header div p {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+    button {
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+<app-header />
+<main class="main_flex">
+    <div id="sidebar">
+        <p><button (click)="change_site('personal')"><i class="fa-regular fa-user"></i> Profile</button></p>
+        <p><button (click)="change_site('settings')"><i class="fa-solid fa-gear"></i> Settings</button></p> 
+        @if(isWindowOver600px){
+            <p><button class="logout_button" (click)="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button></p>
+        }    
+    </div>
+    <div id="app_component">
+        @switch (current_site) {
+            @case ("personal") {
+                <app-personal-info  />  
+            }
+            @case ("settings") {
+                <app-mem-and-set />
+            }
+            @default {
+                <app-personal-info />
+            }
+        }
+    </div>
+</main>
+<app-footer />

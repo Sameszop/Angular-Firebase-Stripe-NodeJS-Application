@@ -1,0 +1,9 @@
+.header_div {
+    display: flex;
+    background-color: #0066b2;
+}
+.header_div p {
+    flex:1;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}

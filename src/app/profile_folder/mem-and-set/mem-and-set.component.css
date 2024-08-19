@@ -1,0 +1,83 @@
+div input {
+    margin: 1% 0;
+    background-color: #003E7F;
+    color: white;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 1rem;
+}
+div input::placeholder {
+    color: grey;
+}
+form button {
+    padding: 3%;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+h2 {
+    font-size: 2rem
+}
+h1 {
+    font-size: 3rem;
+}
+.flex_container {
+    display: flex;
+    /* border-top:solid 1px; */
+    border-bottom: solid 1px;
+    padding-bottom: 5%;
+    max-width: 100%;
+}
+.flex_elem {
+    flex: 1;
+}
+#mem_stat{
+    margin-top: 3%;
+    border-bottom: solid 1px;
+}
+
+#member_container {
+    display: flex;
+    margin: 5% 10%;
+    border: solid 1px;
+    border-radius: 50px;
+}
+#member_container p {
+    flex:1;
+    font-size: 1.2rem;
+}
+#mem_stat button {
+    font-size: 1.3rem;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+h1{
+    margin: 7%;
+}
+#emailbutton a{
+    color: white;
+}
+#agreement_container div button{
+    font-size: 1.3rem;
+    padding: 1%;
+}
+a {
+    text-decoration: none;
+}
+#agreement_container {
+    padding-bottom: 3%;
+}
+#agreement_p {
+    margin: auto 5%;
+}
+@media only screen and (max-width:600px) {
+    .flex_container {
+        display: block;
+    }
+    .flex_elem {
+        border-top: solid 1px;
+    }
+    #member_container{
+        display: block;
+    }
+}

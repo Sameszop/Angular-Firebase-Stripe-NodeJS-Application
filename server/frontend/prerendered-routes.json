@@ -1,0 +1,17 @@
+{
+  "routes": [
+    "/",
+    "/goals",
+    "/home",
+    "/home/ranking",
+    "/login",
+    "/long-term-goals",
+    "/membership",
+    "/privacy-policy",
+    "/profile",
+    "/ranking",
+    "/register",
+    "/register/validateEmail",
+    "/terms-of-usage"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.component.css"],
+  "sourcesContent": ["body{\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n#membership_ad {\r\n    background-color: #999900;\r\n}\r\n#membership_ad button {\r\n    font-size: 1rem;\r\n    padding: 1%;\r\n    margin:0 2%;\r\n    margin-bottom: 3%;\r\n}\r\n#membership_button_div {\r\n    display: flex;\r\n    width: 30%;\r\n    margin-left: 35%;\r\n}\r\n#membership_button_div div{\r\n    flex: 1;\r\n}\r\ndiv i {\r\n    margin-top: 3%;\r\n}"],
+  "mappings": ";AAAA;AACI,UAAQ;AACR,WAAS;AACb;AACA,CAAC;AACG,oBAAkB;AACtB;AACA,CAHC,cAGc;AACX,aAAW;AACX,WAAS;AACT,UAAO,EAAE;AACT,iBAAe;AACnB;AACA,CAAC;AACG,WAAS;AACT,SAAO;AACP,eAAa;AACjB;AACA,CALC,sBAKsB;AACnB,QAAM;AACV;AACA,IAAI;AACA,cAAY;AAChB;",
+  "names": []
+}

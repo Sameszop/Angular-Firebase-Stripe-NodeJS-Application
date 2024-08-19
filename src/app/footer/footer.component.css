@@ -1,0 +1,32 @@
+#footer {
+    display: flex;
+    background-color: #000536;
+    border-top: white solid;
+}
+
+.footer_container {
+    flex: 1;
+}
+#links p {
+    text-decoration: underline;
+}
+#send_email {
+    font-size: 1.3rem;
+    padding: 2%;
+}
+.sm_container {
+    display: flex;
+    margin:  3% 0;
+    width: 40%;
+    margin-left: 30%;
+}
+.sm_container i {
+    flex: 1;
+    margin: 1%;
+}
+.sm_container p {
+    flex: 3;
+    text-align: left;
+    margin: 1%;
+    margin-top: 4%;
+}

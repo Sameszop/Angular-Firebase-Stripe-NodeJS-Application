@@ -1,0 +1,16 @@
+@if(user){
+    <header>
+        <div class="header_div">
+            <p (click)="choose_sounds('lofi')"><i class="fa-solid fa-music"></i> Lofi Beats</p>
+            <p (click)="choose_sounds('nature')"><i class="fa-solid fa-cloud-moon-rain"></i> Nature Sounds</p>
+        </div>
+    </header>
+    @switch (site) {
+        @case("nature") {
+            <app-naturesounds [player_status]="true" />
+        }
+        @case("lofi") {
+            <app-lofimusic [player_status]="true" />
+        }
+    }
+}

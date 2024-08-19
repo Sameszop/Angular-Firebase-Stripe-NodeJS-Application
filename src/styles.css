@@ -1,0 +1,79 @@
+body{
+    background-color:#1d244e;
+    text-align: center;
+    color:white;
+    font-family: "Manjari", sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+input {
+    font-family: "Manjari", sans-serif;
+
+}
+button{
+    border: solid;
+    border-radius: 5px;
+    padding-left:1%;
+    padding-right: 1%;
+    margin: 1%;
+    padding: 1%;
+    color: white;
+    background-color: #0066b2;
+    cursor: pointer; 
+    font-family: "Manjari", sans-serif;
+}
+
+main {
+    min-height: 800px;
+    padding-top: 5%;
+    margin-top: 5%;
+}
+.background{
+    filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+.hide {
+    display: none;
+}
+#score {
+    margin: 0;
+    padding: 10%;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+header,main,footer,body,html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Target autofilled inputs in Chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  /* Other styles to override the autofill */
+  background-color: transparent !important;
+  color: inherit !important;
+  font-family: "Manjari", sans-serif !important;
+
+}
+
+/* Ensure to apply these styles to textareas and select elements if needed */
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: transparent !important;
+  color: inherit !important;
+  font-family: "Manjari", sans-serif !important;
+}

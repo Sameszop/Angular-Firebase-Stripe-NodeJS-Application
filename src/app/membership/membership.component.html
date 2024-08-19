@@ -1,0 +1,28 @@
+<app-header />
+<main>
+    <h1>Membership</h1>
+    <div class="mem_container">
+        <div class="price_container">
+            <h2>$6.99</h2>
+            <p>Per Month</p>
+        </div>
+        <div class="benefits_container">
+            <p><i class="fa-regular fa-circle-check"></i> Productivity Support Every Month</p>
+            <p><i class="fa-regular fa-circle-check"></i> Cancable Every Month</p>
+            <p><i class="fa-regular fa-circle-check"></i> Same Price Forever</p>
+            <p><i class="fa-regular fa-circle-check"></i> All Future Upgrades For Free</p>
+        </div>
+        <form action="" (submit)="startMembership()">
+            <div class="agree_container">
+                <label for="checkbox" class="agree_p">
+                    I have read the <a [routerLink]="">agreement </a>
+                </label>
+                <input id="checkbox" type="checkbox" required>
+            </div>
+            <div class="getmem_container">
+                <button type="submit">Get Membership</button>
+            </div>
+        </form>
+    </div>
+</main>
+<app-footer />

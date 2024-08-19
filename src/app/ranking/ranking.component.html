@@ -1,0 +1,53 @@
+@if(logedIn){
+    <app-header /> 
+}@else {
+    <app-landingheader />
+}
+<main>
+    <h1>Rankings</h1>
+    <h2>Prove Your Productivity Against Other Users</h2>
+    <div id="container_container">
+        @for(user of rankingArray; track $index) {
+            <div class="container" [ngStyle]="{'background-color': user.Name === UserName ? '#000536' : 'inherit', 'border-top': $index==0? 'solid 1px':'none','margin-top': $index==0 ? '2%': 'none',}">
+                <div class="li_container">
+                    <div class="left_container">
+                        <div class="user_rank_container">
+                            <p>{{$index + 1}}.</p>
+                        </div>
+                        <div class="img_container">
+                            <div class="img_parent">
+                                <img [src]="user.profile_pic" alt="User Profile Picture">
+                            </div>
+                        </div>
+                        <div class="name_container">
+                            <p>{{user.Name}}</p>
+                        </div>
+                    </div>
+                    <div class="count_container">
+                        <div>
+                            <div>
+                                <p>Successful Days:</p>
+                                <p>{{user.count.number}}</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p>Points:</p>
+                                <p>{{user.Points}}</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p>Total Points:</p>
+                                <p>{{user.totalPoints}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</main>
+@if(logedIn){
+    <app-footer />
+}

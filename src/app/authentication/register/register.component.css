@@ -1,0 +1,76 @@
+.auth_fields{
+    width: 35%;
+    background-color:#1d244e;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    max-height: 99vh;
+    min-height: 550px;
+}
+.conditions p{
+    display: inline;
+}
+.conditions{
+    margin: 2% auto;
+}
+#register_div .buttons{
+    margin-top: 2%;
+}
+.form_comp{
+    margin: 3% 5%;
+}
+input {
+    padding: 2%;
+    border-radius: 10px;
+    border: solid white;
+    font-size: 1.1rem;
+    background-color: #1d244e;
+    color: white;
+    max-width: 90%;
+    -webkit-text-fill-color: white; /* WebKit specific property */
+}
+
+.buttons{
+    margin-top: 8%;
+    font-size: 1.3rem;
+    padding: 2%;
+}
+h1{
+    font-size: 2.4rem;
+}
+.change_site{
+    margin: 5%;
+    font-size: 1.1rem;
+}
+.link{
+    color: #2200CC;
+}
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000536;
+}
+#approval_container {
+    width: 90%;
+    margin: auto 5%;
+    display: flex;
+}
+#approval_container div input {
+    transform: scale(1.6);
+}
+#approval_container div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#approval_container p {
+    flex: 4;
+}
+
+@media only screen and (max-width:600px) {
+    .auth_fields {
+        width: 100%;
+    }
+}

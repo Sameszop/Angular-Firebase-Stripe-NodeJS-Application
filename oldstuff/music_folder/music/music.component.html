@@ -1,0 +1,23 @@
+@if(current_user){
+    <app-header />
+    <header>
+        <div class="header_div">
+            <p (click)="choose_sounds('lofi')"><i class="fa-solid fa-music"></i> Lofi Beats</p>
+            @if(isWindowOver600px){
+                <p (click)="choose_sounds('nature')"><i class="fa-solid fa-cloud-moon-rain"></i> Nature Sounds</p>
+            }@else{<p (click)="choose_sounds('nature')"><i class="fa-solid fa-cloud-moon-rain"></i> Nature</p>}
+        </div>
+    </header>
+    @if(!routing){
+        <button (click)="open_window()"><i class="fa-regular fa-window-restore"></i> open as own window</button>
+    }
+    @switch (site) {
+        @case("nature") {
+            <app-naturesounds [player_status]="false" />
+        }
+        @case("lofi") {
+            <app-lofimusic [player_status]="false" />
+        }
+    }
+    <app-footer />
+}

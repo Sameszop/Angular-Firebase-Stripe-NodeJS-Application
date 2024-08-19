@@ -1,0 +1,56 @@
+@if(isWindowOver600px){
+    <div id="head_comp_container">
+        <header [ngClass]="{'background':background_stat}">
+            <div class="header_flex">
+                <div id="logo_div"><img src="assets/img/logo.png" (click)="change_site('home')"/></div>
+                <div class="header_elem"><p (click)="change_site('goals')">Goals</p></div>
+                <div class="header_elem"><p (click)="change_site('long-term-goals')">Long-Term Goals</p></div>
+                <div class="header_elem"><p (click)="change_site('ranking')">Ranking</p></div>
+                <!-- <div class="header_elem"><p (click)="change_site('music')">Music</p></div> -->
+                <div class="header_elem"><p (click)="change_site('profile')">Profile</p></div>
+            </div>
+        </header>
+        @if(!membership_status) {
+            <div id="membership_ad" [ngClass]="{'background':background_stat}">
+                <h2>You have {{left_days}} days left in the Free Trial. Get a Membership now!</h2>
+                <div id="membership_button_div">
+                    <div id="left_arrow"><i class="fa-solid fa-arrow-right fa-2x"></i></div>  
+                    <div id="button_div"><button (click)="change_site('membership')">Start Membership</button></div> 
+                    <div id="right_arrow"><i class="fa-solid fa-arrow-left fa-2x"></i></div>
+                </div>
+            </div>
+        } 
+    </div>
+}
+@else {
+    <header [ngClass]="{'background':background_stat}">
+        <div id="head_comp_phone">
+            <div id="menu_div_closed"><i [ngStyle]="{'display' : open_sidebar ? 'none': 'block'}" (click)="open_sidebar=true" class="fa-solid fa-bars fa-3x"></i></div>
+            <div id="logo_div"><img src="assets/img/logo.png" (click)="change_site('home')"/></div>
+        </div>
+    </header>
+    @if(!membership_status) {
+        <div id="membership_ad" [ngClass]="{'background':background_stat}">
+            <h2>You have {{left_days}} days left in the Free Trial. Get a Membership now!</h2>
+            <div id="membership_button_div">
+                <div id="left_arrow"><i class="fa-solid fa-arrow-right fa-2x"></i></div>  
+                <div id="button_div"><button [routerLink]="['/goals']">Start Membership</button></div> 
+                <div id="right_arrow"><i class="fa-solid fa-arrow-left fa-2x"></i></div>
+            </div>
+        </div>
+    } 
+    <div id="header_div" [class.open]="open_sidebar" [ngClass]="{'background':background_stat}">
+        <div id="menu_div_open"><i (click)="open_sidebar=false" class="fa-solid fa-bars fa-3x"></i></div>
+        <p><a [routerLink]="['/goals']">Goals</a></p>
+        <p><a [routerLink]="['/long-term-goals']">LTG</a></p>
+        <p><a [routerLink]="['/ranking']">Ranking</a></p>
+        <!-- <p><a [routerLink]="['/music']">Music</a></p> -->
+        <p><a [routerLink]="['/profile']">Profile</a></p>
+        <div id="second_half">
+            <p>admin<br>&#64;productimate.com</p>
+            <div>
+                <button (click)="open_email()" id="open_email_button">Send Email</button>
+            </div>
+        </div>   
+    </div>
+}

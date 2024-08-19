@@ -1,0 +1,153 @@
+header{
+    width:100%;
+    padding-top: 1%;     
+    background-color: #000536;
+    padding-bottom: 1%;
+    padding: 1% 0;
+    height: min-content;
+    border-bottom: solid;
+    color: white;
+}
+.header_elem{
+    flex: 1;
+    font-size: 2rem;
+    margin-bottom: 0;
+    height: min-content;
+    cursor: pointer;
+}
+.header_elem p{
+    margin-top: 30%;
+    margin-bottom: 0;
+}
+.header_flex {
+    display:flex;
+    height: min-content;
+}
+header div p {
+    cursor: pointer;
+}
+#membership_ad {
+    background-color: #FEBE10;
+    padding: 3% 0;
+}
+#membership_ad h2 {
+    margin-top: 0;
+}
+#logo_div {
+    flex:0.5;
+}
+#membership_button_div {
+    display: flex;
+}
+#button_div {
+    flex: 1;
+}
+#button_div button {
+    padding: 3%;
+    font-size: 1.1rem;
+}
+#left_arrow {
+    text-align: right;
+}
+#right_arrow {
+    text-align: left;
+}
+#left_arrow, #right_arrow {
+    flex: 2;
+    margin-top: 0.5%;
+}
+
+#logo_div img {
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+@media only screen and (max-width:600px) {
+    #left_arrow, #right_arrow {
+        margin-top: 2%;
+    }
+    #button_div {
+        flex: 2;
+        margin: auto 2%;
+    }
+    #head_comp_phone {
+        display: flex;
+        max-height: 100%;
+    }
+    #head_comp_phone div {
+        flex: 1;
+    }
+    #logo_div img {
+        margin-right: 10%;
+        margin-top: 5%;
+        max-height: 90%;
+    }
+    #logo_div{
+        margin: 0;
+        flex: 2;
+        text-align: right;
+    }
+    #open_email_button {
+        font-size: 1.5rem;
+        margin: 20%;
+        padding: 4%;
+    }
+
+    #header_div {
+        display: block;
+        background-color: #000536;
+        left: 0;
+        margin-left: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transform: translateX(-100%); /* Initially position the menu outside the viewport */
+        transition: transform 0.3s ease-in-out;
+        position: fixed; /* Make the sidebar fixed */
+        top: 0;
+        width: 70%;
+        border: solid;
+        border-left: none;
+        height: 100%;
+        text-align: right;
+        z-index: 1000; /* Ensure the sidebar is above other content */
+      }
+    #header_div.open {
+        transform: translateX(0); /* Move the sidebar into the viewport */
+    }
+    #header_div p {
+        margin-right: 5%;
+    }
+    #header_div a {
+        color: white;
+        text-decoration: none;
+        font-size: 2.5rem;
+        margin: 3% 0;
+    }
+    .links {
+        border-top: solid white;
+        /* margin-top: 20%; */
+    }
+    #menu_div_open {
+        text-align: left;
+        margin: 8%;
+    }
+    header{
+        text-align: left;
+        height: 80px;
+    }
+    #menu_div_closed {
+        margin: 5%;
+    }
+    .SM_links {
+        display: flex;
+        margin: 5%;
+        text-align: center;
+    }
+    .SM_links div {
+        flex:1;
+    }
+    #second_half {
+        border-top: solid white;
+        margin-top: 20%;
+    }
+}

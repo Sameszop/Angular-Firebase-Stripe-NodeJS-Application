@@ -1,0 +1,36 @@
+@if(isWindowOver600px){
+    <header>
+        <div id="logo_sec">
+            <div id="logoDiv"><img src="assets/img/icon.png" alt=""></div>
+            <div id="nameDiv"><img src="assets/img/logoName.png" alt="" id="name"></div>
+        </div>
+        <div id="links_sec">
+            <p class="links_elem" [routerLink]="['/home']">Home</p>
+            <p class="links_elem" (click)="goRanking()">Ranking</p>
+            <p class="links_elem" (click)="login()">Login</p>
+            <button class="links_elem" (click)="register()">Start For Free</button>
+        </div>
+    </header>
+}@else {
+    <header>
+        @if(!open_sidebar) {
+            <div id="menu_div_closed"><i (click)="open_sidebar=true" class="fa-solid fa-bars fa-3x"></i></div>
+        }
+    </header>
+    <div id="header_div" [class.open]="open_sidebar">
+        <div id="menu_div_open"><i (click)="open_sidebar=false" class="fa-solid fa-bars fa-3x"></i></div>
+        <div id="links_phone">
+            <p><a [routerLink]="['/home']">Home</a></p>
+            <p><a (click)="goRanking()">Ranking</a></p>
+            <p><a (click)="login()">Login</a></p>
+        </div>
+        <div id="second_half">
+            <p>example&#64;email.com</p>
+            <!-- <div class="SM_links">
+                <div ><i class="fa-brands fa-youtube fa-2x"></i></div>
+                <div><i class="fa-brands fa-instagram fa-2x"></i></div>
+                <div><i class="fa-brands fa-twitter fa-2x"></i></div>
+            </div> -->
+        </div>   
+    </div>
+}

@@ -1,0 +1,45 @@
+p button {
+    font-size: 1.5rem;
+    padding:4%;
+    margin: 5% 0;
+}
+.main_flex {
+    display: flex;
+}
+#sidebar{
+    flex: 1;
+    border-top: solid;
+    border-right: solid;
+    padding-top: 15%;
+}
+#app_component {
+    flex:3;
+    border-top: solid;
+}
+main{
+    margin: 0;
+    height: auto;
+    min-height: 500px;
+}
+.logout_button {
+    color:  white;
+    background-color:red;
+}
+@media only screen and (max-width:600px) {
+    .main_flex {
+        display: block;
+    }
+    #sidebar p {
+        display: inline;
+    }
+    #app_component{
+        border: none;
+    }
+    #sidebar {
+        border: none;
+        border-bottom: solid;
+    }
+    p button {
+        margin: 3% 5%;
+    }
+}

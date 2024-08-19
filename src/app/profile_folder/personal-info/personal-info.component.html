@@ -1,0 +1,35 @@
+@if(User_Data){
+    <h1>Profile</h1>
+    <img [src]="User_Data.profile_pic" alt="" (click)="change_pic()">
+    <p id="img_click">click</p>
+    <div id="user_container">
+        <div class="user_data">
+            <p>Name:</p>
+            <p class="data">{{User_Data.Name}}</p>
+        </div>
+        <div class="user_data">
+            <p >Email:</p>
+            <p class="data">{{User_Data.Email}}</p>
+        </div>
+        <div class="user_data">
+            <p >UID:</p>
+            <p class="data" id="uid">{{User_UID||"undefined"}}</p>
+        </div>
+        <div class="user_data">
+            <p >Points:</p>
+            <p class="data">{{points}}</p>
+        </div>
+        <div class="user_data">
+            <p>Successful Days:</p>
+            <p class="data">{{User_Data.count.number}}</p>
+        </div>
+        <div class="user_data">
+            <p >Membership Status:</p>
+            <p class="data">{{Membership_Status}}</p>
+        </div>
+        @if(!isWindowOver600px){
+            <p><button class="logout_button" (click)="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button></p>
+        }
+    </div>
+}
+@else {}

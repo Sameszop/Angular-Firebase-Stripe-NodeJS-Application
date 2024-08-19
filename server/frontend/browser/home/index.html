@@ -1,0 +1,549 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Productimate</title>
+  <base href="/">
+  <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&amp;display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/img/icon.png?v=1.0">
+<link rel="stylesheet" href="styles.css"><style ng-app-id="ng">
+
+body[_ngcontent-ng-c4083669531] {
+  margin: 0;
+  padding: 0;
+}
+#membership_ad[_ngcontent-ng-c4083669531] {
+  background-color: #999900;
+}
+#membership_ad[_ngcontent-ng-c4083669531]   button[_ngcontent-ng-c4083669531] {
+  font-size: 1rem;
+  padding: 1%;
+  margin: 0 2%;
+  margin-bottom: 3%;
+}
+#membership_button_div[_ngcontent-ng-c4083669531] {
+  display: flex;
+  width: 30%;
+  margin-left: 35%;
+}
+#membership_button_div[_ngcontent-ng-c4083669531]   div[_ngcontent-ng-c4083669531] {
+  flex: 1;
+}
+div[_ngcontent-ng-c4083669531]   i[_ngcontent-ng-c4083669531] {
+  margin-top: 3%;
+}
+/*# sourceMappingURL=app.component.css.map */</style><style ng-app-id="ng">
+
+body[_ngcontent-ng-c2788150303], 
+html[_ngcontent-ng-c2788150303] {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.current_tab[_ngcontent-ng-c2788150303] {
+  text-decoration: underline white;
+}
+.content[_ngcontent-ng-c2788150303] {
+  color: white;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 8%;
+  background-color: #171c38;
+}
+.content[_ngcontent-ng-c2788150303]   h2[_ngcontent-ng-c2788150303] {
+  font-size: 1.5rem;
+  margin-bottom: 4%;
+}
+.pro_con_section[_ngcontent-ng-c2788150303]   p[_ngcontent-ng-c2788150303] {
+  font-size: 1.4rem;
+}
+button[_ngcontent-ng-c2788150303] {
+  padding: 1% 2%;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+#rankingImg[_ngcontent-ng-c2788150303] {
+  background-color: #1d244e;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+#links_sec[_ngcontent-ng-c2788150303] {
+  margin-right: 3%;
+}
+.links_elem[_ngcontent-ng-c2788150303] {
+  margin: 0 2%;
+}
+#pro_con_container[_ngcontent-ng-c2788150303] {
+  display: flex;
+}
+.pro_con_elem[_ngcontent-ng-c2788150303] {
+  flex: 1;
+  text-align: center;
+}
+#con[_ngcontent-ng-c2788150303], 
+#pro[_ngcontent-ng-c2788150303] {
+  width: 55%;
+  color: white;
+  padding: 5%;
+  margin: 10% auto;
+  background-color: rgb(42, 80, 167);
+  border-radius: 5%;
+}
+#con[_ngcontent-ng-c2788150303]   h3[_ngcontent-ng-c2788150303], 
+#pro[_ngcontent-ng-c2788150303]   h3[_ngcontent-ng-c2788150303] {
+  font-size: 1.7rem;
+}
+#con[_ngcontent-ng-c2788150303]   p[_ngcontent-ng-c2788150303], 
+#pro[_ngcontent-ng-c2788150303]   p[_ngcontent-ng-c2788150303] {
+  font-size: 1.3rem;
+}
+#con[_ngcontent-ng-c2788150303] {
+  margin-left: 30%;
+}
+#pro[_ngcontent-ng-c2788150303] {
+  margin-right: 30%;
+  margin-left: 15%;
+}
+.fa-circle-xmark[_ngcontent-ng-c2788150303] {
+  color: #FF6666;
+}
+.fa-circle-check[_ngcontent-ng-c2788150303] {
+  color: rgb(28, 188, 255);
+}
+h2[_ngcontent-ng-c2788150303] {
+  font-size: 2rem;
+}
+.reason_container[_ngcontent-ng-c2788150303] {
+  display: flex;
+  margin: 10% 5%;
+  border: solid;
+  border-radius: 30px;
+  background-color: rgb(42, 80, 167);
+}
+.img_div[_ngcontent-ng-c2788150303] {
+  flex: 1;
+  text-align: right;
+  background-color: #1d244e;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.img_div[_ngcontent-ng-c2788150303]   img[_ngcontent-ng-c2788150303] {
+  max-width: 100%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.text_elem[_ngcontent-ng-c2788150303] {
+  flex: 1;
+  margin-left: 10%;
+  text-align: left;
+}
+h3[_ngcontent-ng-c2788150303] {
+  font-size: 2rem;
+}
+ul[_ngcontent-ng-c2788150303] {
+  text-align: left;
+  font-size: 1.2rem;
+}
+li[_ngcontent-ng-c2788150303] {
+  margin: 5% auto;
+}
+.content[_ngcontent-ng-c2788150303]   p[_ngcontent-ng-c2788150303] {
+  font-size: 0.8rem;
+}
+h1[_ngcontent-ng-c2788150303] {
+  font-size: 3.3rem;
+  margin: 8%;
+  margin-top: 0;
+}
+.content[_ngcontent-ng-c2788150303]   h2[_ngcontent-ng-c2788150303] {
+  font-size: 1.8rem;
+}
+#img_cont[_ngcontent-ng-c2788150303]   img[_ngcontent-ng-c2788150303] {
+  border-radius: 10%;
+}
+#tracker[_ngcontent-ng-c2788150303]   div[_ngcontent-ng-c2788150303]   h2[_ngcontent-ng-c2788150303] {
+  font-size: 1.8rem;
+}
+#gt_explan_cont[_ngcontent-ng-c2788150303] {
+  display: flex;
+  width: 100%;
+}
+.gt_explan[_ngcontent-ng-c2788150303] {
+  flex: 1;
+  margin: 2%;
+  border-radius: 20%;
+  background-color: rgb(42, 80, 167);
+}
+.gt_explan[_ngcontent-ng-c2788150303]   p[_ngcontent-ng-c2788150303] {
+  margin: 5%;
+}
+.gt_explan[_ngcontent-ng-c2788150303]   i[_ngcontent-ng-c2788150303] {
+  margin-top: 10%;
+}
+.gt_explan[_ngcontent-ng-c2788150303]   h3[_ngcontent-ng-c2788150303] {
+  font-size: 1rem;
+}
+#video_con[_ngcontent-ng-c2788150303] {
+  overflow: hidden;
+  flex: 1;
+}
+#video_con[_ngcontent-ng-c2788150303]   video[_ngcontent-ng-c2788150303] {
+  outline: none;
+  line-height: 0;
+  max-width: 90%;
+  border-radius: 5%;
+  height: 100%;
+  clip-path: inset(0px 0px);
+  padding: 0;
+}
+#tracker_expl_cont[_ngcontent-ng-c2788150303] {
+  padding-bottom: 5%;
+  display: flex;
+}
+#tracker_expl[_ngcontent-ng-c2788150303] {
+  flex: 1;
+  background-color: rgb(42, 80, 167);
+  margin-left: 3%;
+  border-radius: 5%;
+}
+#tracker_expl_cont_par[_ngcontent-ng-c2788150303] {
+  border-top: solid 1px;
+}
+#tracker_expl_cont_par[_ngcontent-ng-c2788150303]   h2[_ngcontent-ng-c2788150303] {
+  margin: 5% 0;
+}
+#tracker[_ngcontent-ng-c2788150303]   h2[_ngcontent-ng-c2788150303] {
+  margin-top: 10%;
+}
+.pro_con_section[_ngcontent-ng-c2788150303]   h2[_ngcontent-ng-c2788150303] {
+  margin-top: 10%;
+}
+#reason_par_cont[_ngcontent-ng-c2788150303]   h2[_ngcontent-ng-c2788150303] {
+  margin-top: 10%;
+}
+#first[_ngcontent-ng-c2788150303] {
+  margin-top: 5%;
+}
+@media only screen and (max-width:600px) {
+  .pro_con_section[_ngcontent-ng-c2788150303] {
+    margin: 20% 0;
+  }
+  #tracker_expl_cont_par[_ngcontent-ng-c2788150303] {
+    padding: 10% 0;
+  }
+  #tracker_expl_cont_par[_ngcontent-ng-c2788150303]   h2[_ngcontent-ng-c2788150303] {
+    margin: 20% 0;
+  }
+  h2[_ngcontent-ng-c2788150303] {
+    margin: 20% 0;
+  }
+  #reason_par_cont[_ngcontent-ng-c2788150303] {
+    margin: 20% 0;
+  }
+  .reason_container[_ngcontent-ng-c2788150303] {
+    display: block;
+    text-align: center;
+  }
+  .text_elem[_ngcontent-ng-c2788150303] {
+    margin: 0;
+    text-align: center;
+  }
+  .img_div[_ngcontent-ng-c2788150303]   img[_ngcontent-ng-c2788150303] {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .img_div[_ngcontent-ng-c2788150303] {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  #con[_ngcontent-ng-c2788150303], 
+   #pro[_ngcontent-ng-c2788150303] {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 5% 0;
+  }
+  button[_ngcontent-ng-c2788150303] {
+    font-size: 1.4rem;
+    padding: 2%;
+  }
+  #pro_con_container[_ngcontent-ng-c2788150303] {
+    display: block;
+  }
+  .pro_con_elem[_ngcontent-ng-c2788150303] {
+    margin: 10% 0;
+    padding: 0;
+  }
+  #gt_explan_cont[_ngcontent-ng-c2788150303] {
+    display: block;
+  }
+  .gt_explan[_ngcontent-ng-c2788150303] {
+    display: block;
+    width: 100%;
+    border-radius: 10%;
+    margin: 5% 0;
+    padding: 5% 0;
+  }
+  .gt_explan[_ngcontent-ng-c2788150303]   p[_ngcontent-ng-c2788150303] {
+    margin: 0 5%;
+    font-size: 1.3rem;
+  }
+  .gt_explan[_ngcontent-ng-c2788150303]   h3[_ngcontent-ng-c2788150303] {
+    font-size: 1.5rem;
+  }
+  #video_con[_ngcontent-ng-c2788150303] {
+    display: block;
+  }
+  #tracker_expl_cont[_ngcontent-ng-c2788150303] {
+    display: block;
+  }
+  #video_con[_ngcontent-ng-c2788150303]   video[_ngcontent-ng-c2788150303] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    margin: 0%;
+    padding: 0;
+    border-radius: 5%;
+    max-width: none;
+  }
+  #video_con[_ngcontent-ng-c2788150303] {
+    position: relative;
+    margin: 10% 0;
+    margin-bottom: 5%;
+    padding: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+    text-align: center;
+  }
+  #tracker_expl[_ngcontent-ng-c2788150303] {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 5% 0;
+  }
+  #header_div[_ngcontent-ng-c2788150303] {
+    display: block;
+    background-color: #000536;
+    right: 0;
+    margin-right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 70%;
+    border: solid;
+    border-right: none;
+    height: 100%;
+    text-align: right;
+    z-index: 1000;
+  }
+  main[_ngcontent-ng-c2788150303] {
+    max-width: 100%;
+  }
+  body[_ngcontent-ng-c2788150303] {
+    max-width: 100%;
+  }
+  #header_div.open[_ngcontent-ng-c2788150303] {
+    transform: translateX(0);
+  }
+  #header_div[_ngcontent-ng-c2788150303]   p[_ngcontent-ng-c2788150303] {
+    margin-right: 5%;
+  }
+  #header_div[_ngcontent-ng-c2788150303]   a[_ngcontent-ng-c2788150303] {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin: 3% 0;
+  }
+  .links[_ngcontent-ng-c2788150303] {
+    border-top: solid white;
+  }
+  #menu_div_open[_ngcontent-ng-c2788150303] {
+    text-align: right;
+    margin: 8%;
+  }
+  header[_ngcontent-ng-c2788150303] {
+    text-align: right;
+    height: 80px;
+    width: 100%;
+  }
+  #menu_div_closed[_ngcontent-ng-c2788150303] {
+    padding: 5%;
+    width: 100%;
+  }
+  .SM_links[_ngcontent-ng-c2788150303] {
+    display: flex;
+    margin: 5%;
+    text-align: center;
+  }
+  .SM_links[_ngcontent-ng-c2788150303]   div[_ngcontent-ng-c2788150303] {
+    flex: 1;
+  }
+  #second_half[_ngcontent-ng-c2788150303] {
+    border-top: solid white;
+    margin-top: 20%;
+  }
+  .content[_ngcontent-ng-c2788150303] {
+    padding-top: 13%;
+  }
+  .content[_ngcontent-ng-c2788150303]   h2[_ngcontent-ng-c2788150303] {
+    margin-bottom: 20%;
+  }
+}
+/*# sourceMappingURL=landingpage.component.css.map */</style><style ng-app-id="ng">
+
+header[_ngcontent-ng-c2573543926]   div[_ngcontent-ng-c2573543926] {
+  flex: 1;
+}
+header[_ngcontent-ng-c2573543926]   div[_ngcontent-ng-c2573543926]   p[_ngcontent-ng-c2573543926] {
+  display: inline;
+  font-size: 1.1rem;
+}
+#links_sec[_ngcontent-ng-c2573543926] {
+  margin-right: 3%;
+  text-align: right;
+}
+img[_ngcontent-ng-c2573543926] {
+  max-height: 50px;
+}
+#name[_ngcontent-ng-c2573543926] {
+  margin-top: 2%;
+}
+.links_elem[_ngcontent-ng-c2573543926] {
+  margin: 0 2%;
+}
+.fa-circle-xmark[_ngcontent-ng-c2573543926] {
+  color: #FF6666;
+}
+.fa-circle-check[_ngcontent-ng-c2573543926] {
+  color: rgb(28, 188, 255);
+}
+header[_ngcontent-ng-c2573543926] {
+  width: 100%;
+  background-color: #000536;
+  height: min-content;
+  display: flex;
+  border-bottom: solid 1px;
+  max-height: 60px;
+}
+.header_elem[_ngcontent-ng-c2573543926] {
+  flex: 1;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 4%;
+  height: min-content;
+}
+.header_elem[_ngcontent-ng-c2573543926]   p[_ngcontent-ng-c2573543926] {
+  margin: 0;
+  cursor: pointer;
+}
+.header_flex[_ngcontent-ng-c2573543926] {
+  display: flex;
+  height: min-content;
+}
+header[_ngcontent-ng-c2573543926]   div[_ngcontent-ng-c2573543926]   p[_ngcontent-ng-c2573543926] {
+  cursor: pointer;
+}
+#links_sec[_ngcontent-ng-c2573543926] {
+  padding: 1.5% 0;
+}
+#logo_sec[_ngcontent-ng-c2573543926] {
+  display: flex;
+}
+#logo_sec[_ngcontent-ng-c2573543926]   div[_ngcontent-ng-c2573543926] {
+  flex: 0.4;
+}
+#logoDiv[_ngcontent-ng-c2573543926] {
+  text-align: right;
+}
+#nameDiv[_ngcontent-ng-c2573543926] {
+  text-align: left;
+}
+@media only screen and (max-width:600px) {
+  #header_div[_ngcontent-ng-c2573543926] {
+    display: block;
+    background-color: #000536;
+    right: 0;
+    margin-right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 70%;
+    border: solid;
+    border-right: none;
+    height: 100%;
+    text-align: right;
+    z-index: 1000;
+  }
+  main[_ngcontent-ng-c2573543926] {
+    max-width: 100%;
+  }
+  body[_ngcontent-ng-c2573543926] {
+    max-width: 100%;
+  }
+  #header_div.open[_ngcontent-ng-c2573543926] {
+    transform: translateX(0);
+  }
+  #header_div[_ngcontent-ng-c2573543926]   p[_ngcontent-ng-c2573543926] {
+    margin-right: 5%;
+  }
+  #header_div[_ngcontent-ng-c2573543926]   a[_ngcontent-ng-c2573543926] {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin: 3% 0;
+  }
+  .links[_ngcontent-ng-c2573543926] {
+    border-top: solid white;
+  }
+  #menu_div_open[_ngcontent-ng-c2573543926] {
+    text-align: right;
+    margin: 8%;
+  }
+  header[_ngcontent-ng-c2573543926] {
+    text-align: right;
+    height: 80px;
+    width: 100%;
+  }
+  #menu_div_closed[_ngcontent-ng-c2573543926] {
+    padding: 5%;
+    width: 100%;
+  }
+  .SM_links[_ngcontent-ng-c2573543926] {
+    display: flex;
+    margin: 5%;
+    text-align: center;
+  }
+  .SM_links[_ngcontent-ng-c2573543926]   div[_ngcontent-ng-c2573543926] {
+    flex: 1;
+  }
+  #second_half[_ngcontent-ng-c2573543926] {
+    border-top: solid white;
+    margin-top: 20%;
+  }
+  #links_phone[_ngcontent-ng-c2573543926] {
+    margin-top: 20%;
+  }
+  #menu_div_closed[_ngcontent-ng-c2573543926] {
+    padding: 3%;
+  }
+}
+/*# sourceMappingURL=landingheader.component.css.map */</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c4083669531="" ng-version="18.0.5" ngh="2" ng-server-context="ssg"><router-outlet _ngcontent-ng-c4083669531=""></router-outlet><app-landingpage _nghost-ng-c2788150303="" ngh="1"><app-landingheader _ngcontent-ng-c2788150303="" _nghost-ng-c2573543926="" ngh="0"><header _ngcontent-ng-c2573543926=""><div _ngcontent-ng-c2573543926="" id="logo_sec"><div _ngcontent-ng-c2573543926="" id="logoDiv"><img _ngcontent-ng-c2573543926="" src="assets/img/icon.png" alt=""></div><div _ngcontent-ng-c2573543926="" id="nameDiv"><img _ngcontent-ng-c2573543926="" src="assets/img/logoName.png" alt="" id="name"></div></div><div _ngcontent-ng-c2573543926="" id="links_sec"><p _ngcontent-ng-c2573543926="" class="links_elem" tabindex="0" ng-reflect-router-link="/home">Home</p><p _ngcontent-ng-c2573543926="" class="links_elem">Ranking</p><p _ngcontent-ng-c2573543926="" class="links_elem">Login</p><button _ngcontent-ng-c2573543926="" class="links_elem">Start For Free</button></div></header><!--container--><!--container--></app-landingheader><main _ngcontent-ng-c2788150303=""><div _ngcontent-ng-c2788150303="" class="content"><h1 _ngcontent-ng-c2788150303="">Accomplish Your Goals As Fast As Possible With Productimate</h1><h2 _ngcontent-ng-c2788150303="">The Best Goaltracker On The Internet</h2><button _ngcontent-ng-c2788150303="">Start For Free</button><h4 _ngcontent-ng-c2788150303="">Productimate is currently for free (in the future users will have to pay)</h4></div><div _ngcontent-ng-c2788150303=""><div _ngcontent-ng-c2788150303="" id="tracker_expl_cont_par"><h2 _ngcontent-ng-c2788150303="">What Is A Goaltracker?</h2><div _ngcontent-ng-c2788150303="" id="tracker_expl_cont"><div _ngcontent-ng-c2788150303="" id="tracker_expl"><ul _ngcontent-ng-c2788150303=""><li _ngcontent-ng-c2788150303="">A Goaltracker is a system where you write your goals down to track them</li><li _ngcontent-ng-c2788150303="">The process of writing goals down helps you to remember and to commit to your goals</li><li _ngcontent-ng-c2788150303="">If you achieve a goal and check it off, your brain releases dopamine which gives you the desire to accomplish more goals</li><li _ngcontent-ng-c2788150303="">Therefore a goaltracker makes you commit to a goal and at the same time gives you a desire to accomplish more goals</li></ul></div><div _ngcontent-ng-c2788150303="" id="video_con"><video _ngcontent-ng-c2788150303="" loop="" autoplay="" muted=""><source _ngcontent-ng-c2788150303="" src="/assets/img/land_loop.mp4" type="video/mp4"></video></div></div><button _ngcontent-ng-c2788150303="">Get started</button></div><div _ngcontent-ng-c2788150303="" id="tracker"><h2 _ngcontent-ng-c2788150303="">A Goaltracker...</h2><div _ngcontent-ng-c2788150303="" id="gt_explan_cont"><div _ngcontent-ng-c2788150303="" class="gt_explan"><i _ngcontent-ng-c2788150303="" class="fa-solid fa-map-location-dot fa-2x"></i><h3 _ngcontent-ng-c2788150303="">Gives you Orientation</h3><p _ngcontent-ng-c2788150303="">By writing down your goals, you specify your future actions. So you will know what you got to do</p></div><div _ngcontent-ng-c2788150303="" class="gt_explan"><i _ngcontent-ng-c2788150303="" class="fa-solid fa-bullseye fa-2x"></i><h3 _ngcontent-ng-c2788150303="">Gives you Focus</h3><p _ngcontent-ng-c2788150303="">To put all your attention on one target not only makes your actions better, it also gives you more satisfaction</p></div><div _ngcontent-ng-c2788150303="" class="gt_explan"><i _ngcontent-ng-c2788150303="" class="fa-solid fa-clock fa-2x"></i><h3 _ngcontent-ng-c2788150303="">Gives you Motivation</h3><p _ngcontent-ng-c2788150303="">To see your progress always motivates you to do more</p></div><div _ngcontent-ng-c2788150303="" class="gt_explan"><i _ngcontent-ng-c2788150303="" class="fa-regular fa-face-smile-beam fa-2x"></i><h3 _ngcontent-ng-c2788150303="">Makes discipline Fun</h3><p _ngcontent-ng-c2788150303="">You get dopamine when you achieved a goal. So it feels like eating chocolate without really eating chocolate </p></div></div></div><div _ngcontent-ng-c2788150303="" class="pro_con_section"><h2 _ngcontent-ng-c2788150303="">A Goaltracker is your secret for your productive success</h2><p _ngcontent-ng-c2788150303="">It could be the difference between future failure or success</p><div _ngcontent-ng-c2788150303="" id="pro_con_container"><div _ngcontent-ng-c2788150303="" class="pro_con_elem"><div _ngcontent-ng-c2788150303="" id="con"><h3 _ngcontent-ng-c2788150303="">Without A Goaltracker</h3><p _ngcontent-ng-c2788150303=""><i _ngcontent-ng-c2788150303="" class="fa-solid fa-circle-xmark"></i> No Orientation</p><p _ngcontent-ng-c2788150303=""><i _ngcontent-ng-c2788150303="" class="fa-solid fa-circle-xmark"></i> Low Focus</p><p _ngcontent-ng-c2788150303=""><i _ngcontent-ng-c2788150303="" class="fa-solid fa-circle-xmark"></i> No Motivation</p><p _ngcontent-ng-c2788150303=""><i _ngcontent-ng-c2788150303="" class="fa-solid fa-circle-xmark"></i> Lazyness</p></div></div><div _ngcontent-ng-c2788150303="" class="pro_con_elem"><div _ngcontent-ng-c2788150303="" id="pro"><h3 _ngcontent-ng-c2788150303="">With A Goaltracker</h3><p _ngcontent-ng-c2788150303=""><i _ngcontent-ng-c2788150303="" class="fa-solid fa-circle-check"></i> Orientation For Your Goals</p><p _ngcontent-ng-c2788150303=""><i _ngcontent-ng-c2788150303="" class="fa-solid fa-circle-check"></i> Increased Focus For Work</p><p _ngcontent-ng-c2788150303=""><i _ngcontent-ng-c2788150303="" class="fa-solid fa-circle-check"></i> Motivation For Goals</p><p _ngcontent-ng-c2788150303=""><i _ngcontent-ng-c2788150303="" class="fa-solid fa-circle-check"></i> Discipline</p></div></div></div><button _ngcontent-ng-c2788150303="">Get started</button></div></div><div _ngcontent-ng-c2788150303="" id="reason_par_cont"><h2 _ngcontent-ng-c2788150303="">Cato Provides You With Everything You Need To Achieve Your Goals</h2><div _ngcontent-ng-c2788150303="" id="first" class="reason_container"><div _ngcontent-ng-c2788150303="" class="text_elem"><h3 _ngcontent-ng-c2788150303="">Goaltracker</h3><ul _ngcontent-ng-c2788150303=""><li _ngcontent-ng-c2788150303="">Make Every Day Successful</li><li _ngcontent-ng-c2788150303="">Track Your Goals</li><li _ngcontent-ng-c2788150303="">Track Your Habits</li></ul></div><div _ngcontent-ng-c2788150303="" class="img_div"><img _ngcontent-ng-c2788150303="" src="assets/img/Goal_screen.png"></div></div><div _ngcontent-ng-c2788150303="" class="reason_container"><div _ngcontent-ng-c2788150303="" class="text_elem"><h3 _ngcontent-ng-c2788150303="">Longterm Goaltracker</h3><ul _ngcontent-ng-c2788150303=""><li _ngcontent-ng-c2788150303="">A Roadmap For Your Dreams</li><li _ngcontent-ng-c2788150303="">Define Your Long-Term Goals</li><li _ngcontent-ng-c2788150303="">Add All Necessary Steps</li><li _ngcontent-ng-c2788150303="">Make Tracked Progress Over Time</li></ul></div><div _ngcontent-ng-c2788150303="" class="img_div"><img _ngcontent-ng-c2788150303="" src="assets/img/LTG_screen.png"></div></div><div _ngcontent-ng-c2788150303="" class="reason_container"><div _ngcontent-ng-c2788150303="" class="text_elem"><h3 _ngcontent-ng-c2788150303="">Rankings for Competition</h3><ul _ngcontent-ng-c2788150303=""><li _ngcontent-ng-c2788150303="">Compete Against Other Users</li><li _ngcontent-ng-c2788150303="">See Who Is The Most Productive</li><li _ngcontent-ng-c2788150303="">Motivates You To Beat Your Opponents By Being Productive</li></ul></div><div _ngcontent-ng-c2788150303="" id="rankingImg" class="img_div"><img _ngcontent-ng-c2788150303="" src="assets/img/Ranking_screen.png"></div></div></div></main><footer _ngcontent-ng-c2788150303=""></footer></app-landingpage><!--container--></app-root>
+<script src="polyfills.js" type="module"></script><script src="main.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"0":"t0","1":"t1"},"c":{"0":[{"i":"t0","r":1}],"1":[]}},{},{"c":{"0":[{"i":"c2788150303","r":1}]}}]}</script></body></html>

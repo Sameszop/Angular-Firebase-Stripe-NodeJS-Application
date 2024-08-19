@@ -1,0 +1,15 @@
+<main [ngClass]="{'player':player_status}">
+    <div>
+        <h1>Lofi Radio</h1>
+        @if(artist_credit){<button (click)="show_credits()">Show Credits</button>}
+        <div><img [src]="lofi_img" alt=""> </div>
+        <p id="song_title"><b>{{song_title}}</b></p>
+        <p id="song_artist">{{song_artist}}</p>
+        <div class="buttons_div">
+            <button class="button_music" (dblclick)="backward()" (click)="begin()"><i class="fa-solid fa-backward-step fa-2x"></i></button>
+            <button class="button_music" (click)="player()"><i [class]="play_button"></i></button>
+            <button class="button_music" (click)="forward()"><i class="fa-solid fa-forward-step fa-2x "></i></button>
+        </div>
+    </div>
+    <audio #audio_elem type="audio/mpeg" controls style="display: none;" (ended)="forward()"></audio>    
+</main>

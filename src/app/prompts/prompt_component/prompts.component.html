@@ -1,0 +1,13 @@
+@if(local_status) {
+    <form (submit)="resolve()">
+        <div #prompt_container id="prompt_div">
+            <h2>{{prompt_header}}</h2>
+            <p>{{prompt_question}}</p>
+            <input type="text" [(ngModel)]="prompt_val" [ngModelOptions]="{standalone:true}">
+            <div>
+                <button type="submit">Ok</button>
+                <button (click)="cancel()">Cancel</button>
+            </div>
+        </div>
+    </form>
+}

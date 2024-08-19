@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/profile_folder/profile/profile.component.css"],
+  "sourcesContent": ["p button {\r\n    font-size: 1.5rem;\r\n    padding:4%;\r\n    margin: 5% 0;\r\n}\r\n.main_flex {\r\n    display: flex;\r\n}\r\n#sidebar{\r\n    flex: 1;\r\n    border-top: solid;\r\n    border-right: solid;\r\n    padding-top: 15%;\r\n}\r\n#app_component {\r\n    flex:3;\r\n    border-top: solid;\r\n}\r\nmain{\r\n    margin: 0;\r\n    height: auto;\r\n    min-height: 500px;\r\n}\r\n.logout_button {\r\n    color:  white;\r\n    background-color:red;\r\n}\r\n@media only screen and (max-width:600px) {\r\n    .main_flex {\r\n        display: block;\r\n    }\r\n    #sidebar p {\r\n        display: inline;\r\n    }\r\n    #app_component{\r\n        border: none;\r\n    }\r\n    #sidebar {\r\n        border: none;\r\n        border-bottom: solid;\r\n    }\r\n    p button {\r\n        margin: 3% 5%;\r\n    }\r\n}"],
+  "mappings": ";AAAA,EAAE;AACE,aAAW;AACX,WAAQ;AACR,UAAQ,GAAG;AACf;AACA,CAAC;AACG,WAAS;AACb;AACA,CAAC;AACG,QAAM;AACN,cAAY;AACZ,gBAAc;AACd,eAAa;AACjB;AACA,CAAC;AACG,QAAK;AACL,cAAY;AAChB;AACA;AACI,UAAQ;AACR,UAAQ;AACR,cAAY;AAChB;AACA,CAAC;AACG,SAAQ;AACR,oBAAiB;AACrB;AACA,OAAO,KAAK,OAAO,IAAI,CAAC,SAAS,CAAC;AAC9B,GAvBH;AAwBO,aAAS;AACb;AACA,GAvBH,QAuBY;AACL,aAAS;AACb;AACA,GApBH;AAqBO,YAAQ;AACZ;AACA,GA7BH;AA8BO,YAAQ;AACR,mBAAe;AACnB;AACA,IAAE;AACE,YAAQ,GAAG;AACf;AACJ;",
+  "names": []
+}

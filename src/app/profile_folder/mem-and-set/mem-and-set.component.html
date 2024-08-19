@@ -1,0 +1,64 @@
+<div>
+    <div >
+        <h1>Settings</h1>        
+        <div class="flex_container">
+            <div class="flex_elem" >
+                <h2>Name</h2>
+                <form action="">
+                    <div><input type="text" placeholder="click" #newName></div>
+                    <div><button type="submit">Change Name</button></div>
+                </form>
+            </div>
+            <div class="flex_elem">
+                <h2>Email</h2>
+                <form (submit)="change_email()">
+                    <div><input type="text" placeholder="click" #newEmail></div>
+                    <div>
+                        <button type="submit">Change Email</button>
+                    </div>
+                </form>
+            </div>
+            <div class="flex_elem">
+                <h2>Password</h2>
+                <!-- <p>> 5 characters</p> -->
+                <form (submit)="change_password()">
+                    <div>
+                        <input placeholder="Old Password" type="password" #oldpassword (input)="old_password_status = true">
+                    </div>
+                    @if(oldpassword.value.length > 0){
+                        <div>
+                            <input placeholder="New Password" type="password" name="" #newpassword>
+                            <input placeholder="Confirm New Password" type="password" name="" #newpasswordconfirm>
+                        </div>
+                    }
+                    <button type="submit">Change Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="mem_stat">
+        <h1>Membership</h1>
+        <div>
+            <div id="member_container">
+                <p>Membership-Status:</p>
+                <p>{{membership_text}}</p>
+            </div>
+            <!-- @if(membership_status) {
+                <button (click)="unsubscripe()">Unsubscripe</button>
+            } -->
+            <!-- @else{<button (click)="subscripe()">Subscripe</button>} -->
+        </div>
+    </div>
+    <div id="agreement_container">
+        <h1>Agreements</h1>
+        <div>
+            <button [routerLink]="['/privacy-policy']">Read Privacy Policy</button>
+            <button [routerLink]="['/terms-of-usage']">Read Terms of Usage</button>
+        </div>
+        <div id="agreement_p">
+            <p>If you have any requests (e. g. denying usage) towards you private data, please send us an email at admin&#64;productimate.com</p>
+            <p><b>Please keep in mind that in most cases that will mean that you will not be able to use our service anymore</b></p>
+            <button id="emailbutton"><a href="mailto:admin@productimate.com">Send an email</a></button>
+        </div>
+    </div>
+</div>

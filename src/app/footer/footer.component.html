@@ -1,0 +1,19 @@
+@if(isWindowOver600px){
+    <footer [ngClass] = "{'background':background_stat}">
+        <div id="footer">
+            <div class="footer_container" id="links">
+                <h2>Useful Links</h2>
+                <p (click)="change_site('goals')">Goalpage</p>
+                <p (click)="change_site('long-term-goals')">Long-Term Goals</p>
+                <!-- <p (click)="change_site('music')">Music</p> -->
+                 <p (click)="change_site('ranking')">Ranking</p>
+                <p (click)="change_site('profile')">Profile</p>
+            </div>
+            <div class="footer_container">
+                <h2>Contact</h2>
+                <p>admin&#64;productimate.com</p>
+                <button (click)="open_email()" id="send_email">Send Email with one click</button>
+            </div>    
+        </div>
+    </footer>
+}

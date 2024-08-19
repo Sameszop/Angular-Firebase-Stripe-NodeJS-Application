@@ -1,0 +1,49 @@
+.mem_container {
+    margin: 5% 30%;
+    background-color: #000536;
+    border-radius: 10%;
+    padding: 5%;
+}
+.price_container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1%;
+}
+.price_container {
+    margin-bottom: 20%;
+}
+.benefits_container p{
+    font-size: 1.3rem;
+}
+.benefits_container {
+    text-align: left;
+    /* border-top: solid 1px; */
+    margin: 15% 5%;
+}
+.getmem_container button {
+    font-size: 1.5rem;
+    padding: 2%;
+} 
+.getmem_container {
+    margin:10% 5%;
+}
+#checkbox {
+    transform: scale(1.6);
+}
+label {
+    font-size: 1.3rem;
+}
+.agree_container {
+    margin: 5% 0;
+}
+h1 {
+    font-size: 3.5rem;
+    margin: 10%;
+}
+@media only screen and (max-width:600px) {
+    .mem_container {
+        margin: 5% 0;
+    }
+    main {
+        min-height: auto;
+    }
+}

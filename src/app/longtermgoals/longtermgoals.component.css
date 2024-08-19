@@ -1,0 +1,179 @@
+img {
+    max-width: 400px;
+    border:solid black;
+    border-radius: 5px;
+}
+.step_check {
+    margin-top: 4%;
+    margin-right: 5%;
+    transform: scale(1.3);
+}
+.LTG_container {
+    margin: 5% 0%;
+    padding: 3% 0;
+    border-top: solid;
+}
+.step_container {
+    display: flex;
+    background-color: #4B61D1;
+    width: 60%;
+    color: white;
+    border: solid white;
+    border-radius: 10px;
+    margin: 0.5% 20%;
+}
+.step_container p {
+    font-size: 1.3rem;
+    margin: 2%;
+    padding: 0;
+    margin-top: 2.8%;
+    text-align: left;
+}
+.button_area {
+    /* text-align: right; */
+    margin: 1%;
+    display: flex;
+}
+.button_area button {
+    font-size: 1rem;
+    padding: 2%;
+    border: solid 1px;
+}
+.marker {
+    font-size: 1.3rem;
+    margin: 2%;
+}
+.step_elem {
+    flex: 1;
+}
+button{
+    font-size: 1.1rem;
+}
+.step_visual {
+    display: flex;
+    /* margin-left: 5%; */
+}
+.step_visual div{
+    margin-top: 2%;
+    flex: 1;
+    text-align: left;
+}
+h1 {
+    font-size: 3.5rem;
+    margin: 5%;
+}
+h2{
+    font-size: 2rem;
+    margin: 2%;
+}
+.step_visual h2 {
+    flex: 2;
+}
+.goal_name {
+    font-size: 2.5rem;
+}
+.button_area input {
+    transform: scale(1.3);
+}
+.step_buttons{
+    flex:5;
+    text-align: right;
+}
+.step_buttons .button_elem button{
+    padding: 3%;
+}
+.step_buttons .button_elem {
+    display: inline;
+}
+#phone_noti {
+    margin: 10%;
+    background-color: red;
+    padding: 5%;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+#points_score {
+    margin: 0;
+    padding: 20%;
+}
+#Points_displayer{
+    text-align: center;
+    width: auto;
+    margin: 5% 35%;
+    /* border:solid; */
+    border-radius:10px;
+    /* background-color:#000536; */
+    display: flex;
+}
+#Points_displayer div{
+    flex: 1;
+    background-color: #161b3b;
+    margin: 3%;
+    border-radius: 20%;
+}
+@media only screen and (max-width:600px) {
+    #Points_displayer {
+        width: auto;
+        margin: 20% 5%;
+    }
+    #Points_displayer p {
+        font-size: 1.5rem;
+    }
+
+    .step_container {
+        width: 100%;
+        margin-left: 0;
+    }
+    .step_container p {
+        margin: 8% 0;
+    }
+    .step_check {
+        margin-top: 15%;
+    }
+    .step_check input {
+        transform: scale(1.8);
+    }
+    .LTG_menu button{
+        font-size: 1.3rem;
+        margin: 3%;
+        padding: 2%;
+    }
+    img {
+        width: 100%;
+    }
+    h1, h2 {
+        margin: 20% 0;
+    }
+    #add_LTG {
+        font-size: 1.5rem;
+        padding: 3%;
+    }
+    .goal_name {
+        margin: 10%;
+    }
+
+    .step_visual_elem {
+        margin: 0;
+    }
+    .step_visual {
+        margin: 10% 0;
+    }
+    .left_side {
+        margin: 2% 0;
+        flex: 2;
+    }
+    .button_area {
+        flex:1.4;
+    }
+    .step_buttons .button_elem {
+        display: block;
+        text-align: center;
+    }
+    .button_elem {
+        font-size: 1.3rem;
+        padding: 2%;
+    }
+    .stepsHeader {
+        margin-top: 3%;
+    }
+}

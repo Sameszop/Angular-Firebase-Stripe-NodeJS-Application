@@ -1,0 +1,122 @@
+<app-landingheader />
+<main>
+    <div class="content">
+        <h1>Accomplish Your Goals As Fast As Possible With Productimate</h1>
+        <h2>The Best Goaltracker On The Internet</h2>
+        <button (click)="register()">Start For Free</button>
+        <h4>Productimate is currently for free (in the future users will have to pay)</h4>
+        <!-- <p>No Payment Details Needed</p> -->
+        <!-- <p>Afterwards you can purchase a membership for $6.99 a month</p> -->
+    </div>
+    <div>
+        <div id="tracker_expl_cont_par">
+            <h2>What Is A Goaltracker?</h2>
+            <div id="tracker_expl_cont">
+                <div id="tracker_expl">
+                    <ul>
+                        <li>A Goaltracker is a system where you write your goals down to track them</li>
+                        <li>The process of writing goals down helps you to remember and to commit to your goals</li>
+                        <li>If you achieve a goal and check it off, your brain releases dopamine which gives you the desire to accomplish more goals</li>
+                        <li>Therefore a goaltracker makes you commit to a goal and at the same time gives you a desire to accomplish more goals</li>
+                    </ul>
+                </div>
+                <div id="video_con">
+                    <video loop autoplay muted>
+                        <source src="/assets/img/land_loop.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <button (click)="register()">Get started</button>
+        </div>
+        <div id="tracker">
+            <h2>A Goaltracker...</h2>
+            <div id="gt_explan_cont">
+                <div class="gt_explan">
+                    <i class="fa-solid fa-map-location-dot fa-2x"></i>
+                    <h3>Gives you Orientation</h3>
+                    <p>By writing down your goals, you specify your future actions. So you will know what you got to do</p>
+                </div>
+                <div class="gt_explan">
+                    <i class="fa-solid fa-bullseye fa-2x"></i>
+                    <h3>Gives you Focus</h3>
+                    <p>To put all your attention on one target not only makes your actions better, it also gives you more satisfaction</p>
+                </div>                
+                <div class="gt_explan">
+                    <i class="fa-solid fa-clock fa-2x"></i>
+                    <h3>Gives you Motivation</h3>
+                    <p>To see your progress always motivates you to do more</p>
+                </div>                
+                <div class="gt_explan">
+                    <i class="fa-regular fa-face-smile-beam fa-2x"></i>
+                    <h3>Makes discipline Fun</h3>
+                    <p>You get dopamine when you achieved a goal. So it feels like eating chocolate without really eating chocolate </p>
+                </div>                
+            </div>
+        </div>
+        <div class="pro_con_section">
+            <h2>A Goaltracker is your secret for your productive success</h2>
+            <p>It could be the difference between future failure or success</p>
+            <div id="pro_con_container">
+                <div class="pro_con_elem">
+                    <div id="con">
+                        <h3>Without A Goaltracker</h3>
+                        <p><i class="fa-solid fa-circle-xmark"></i> No Orientation</p>
+                        <p><i class="fa-solid fa-circle-xmark"></i> Low Focus</p>
+                        <p><i class="fa-solid fa-circle-xmark"></i> No Motivation</p>
+                        <p><i class="fa-solid fa-circle-xmark"></i> Lazyness</p>
+                    </div>
+                </div>
+                <div class="pro_con_elem">
+                    <div id="pro">
+                        <h3>With A Goaltracker</h3>
+                        <p><i class="fa-solid fa-circle-check"></i> Orientation For Your Goals</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Increased Focus For Work</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Motivation For Goals</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Discipline</p>
+                    </div>
+                </div>
+            </div>
+            <button (click)="register()">Get started</button>
+        </div>
+    </div>
+    <div id="reason_par_cont">
+        <h2>Cato Provides You With Everything You Need To Achieve Your Goals</h2>
+        <div class="reason_container" id="first">
+            <div class="text_elem">
+                <h3>Goaltracker</h3>
+                <ul>
+                    <li>Make Every Day Successful</li>
+                    <li>Track Your Goals</li>
+                    <li>Track Your Habits</li>
+                </ul>
+            </div>
+            <div class="img_div"><img [src]="img_obj.Goal || null" /></div>
+        </div>
+        <div class="reason_container">
+            <div class="text_elem">
+                <h3>Longterm Goaltracker</h3>
+                <ul>
+                    <li>A Roadmap For Your Dreams</li>
+                    <li>Define Your Long-Term Goals</li>
+                    <li>Add All Necessary Steps</li>
+                    <li>Make Tracked Progress Over Time</li>
+                </ul>
+            </div>
+            <div class="img_div"><img [src]="img_obj.LTG || null" /></div>
+        </div>
+        <div class="reason_container">      
+            <div class="text_elem">                  
+                <h3>Rankings for Competition</h3>
+                <ul>
+                    <li>Compete Against Other Users</li>
+                    <li>See Who Is The Most Productive</li>
+                    <li>Motivates You To Beat Your Opponents By Being Productive</li>
+                </ul>
+            </div>
+            <div class="img_div" id="rankingImg"><img [src]="img_obj.Music || null" /></div>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
