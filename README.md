@@ -6,6 +6,8 @@ A productivity app that can run on the browser with additional features such as:
 
 # How to run the app
 You need to intgerade an environment with a
+- run **npm install**
+- run **cd server && npm install**  
 - Stripe secret key
 - Firebase-Admin file and adress
 - port (optionally)
